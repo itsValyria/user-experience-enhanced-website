@@ -26,25 +26,25 @@ De Buurtcampus is een project voor een letterlijke buurt campus waar vraag en aa
 De Buurtcampus heeft deze sprint vijf pagina's:
 
 ### 1. Initiatieven overzicht page
-Deze pagina is gebaseerd op de volgende user story:
+Deze pagina is gebaseerd op de volgende user story: <br>
 ```Als buurtbewoner van Amsterdam West wil ik een overzicht van alle buurtinitiatieven kunnen bekijken, zodat ik een indruk kan krijgen van wat er allemaal te doen is in de wijk.``` <br>
 en <br>
 ```Als buurtbewoner van Amsterdam West wil ik een initiatief kunnen liken.```
 
 ### 2. Initiatief informatie page
-Deze pagina is gebaseerd op de volgende user story:
+Deze pagina is gebaseerd op de volgende user story: <br>
 ```Als buurtbewoner van Amsterdam West wil ik meer informatie over een initiatief kunnen bekijken, zodat ik kan zien of ik mij bij het initiatief wil aansluiten.```
 
 ### 2. Initiatief aanmelden page
-Deze pagina is gebaseerd op de volgende user story:
+Deze pagina is gebaseerd op de volgende user story: <br>
 ```Als stichting of bewoner van Amsterdam West wil ik een initiatief kunnen plaatsen op de website.```
 
 ### 4. Landing page
-Deze pagina is gebaseerd op de volgende user story:
+Deze pagina is gebaseerd op de volgende user story: <br>
 ```Als stichting of bewoner wil ik in een opslag beknopt zien wat de WestConnect is en wat ze doen.```
 
 ### 4. FAQ page
-Deze pagina is gebaseerd op de volgende user story:
+Deze pagina is gebaseerd op de volgende user story: <br>
 ```Als stichting of bewoner wil veelgestelde vragen over WestConnect duidelijk kunnen bekijken.```
 
 ## Kenmerken
