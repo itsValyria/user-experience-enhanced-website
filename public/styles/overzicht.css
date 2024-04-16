@@ -1,0 +1,102 @@
+/* ------------- Root & Font ------------- */
+
+@font-face {
+  font-family: "Medium";
+  src: url("/fonts/Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/Bold.otf") format("opentype");
+}
+
+:root {
+  --base--white: #fff;
+  --base--grey-97: #f8f8f8;
+  --base--grey-62: #aaa;
+  --base--grey-19: #4a4a4a;
+  --base--black: #202020;
+
+  --primary--green-accent: #41bd66;
+  --secondary--green-accent: #a0d7b0;
+  --light--green-accent: #e3ebdd;
+}
+
+/* -------------- Overzicht -------------- */
+
+.overzicht__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.overzicht__service {
+  width: 18em;
+  height: 30em;
+  margin: 2em 0;
+  border-radius: 8px;
+  border: 2px solid var(--base--grey-97);
+  background-color: var(--base--white);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.overzicht__service img {
+  width: 18em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.overzicht__service h2 {
+  font-size: 1.2em;
+  margin: 0.4em 0;
+}
+
+.overzicht__service--tekst {
+  padding: 0.6em 1em;
+}
+
+.overzicht__button--container {
+  display: flex;
+}
+
+.overzicht__button {
+  width: 14em;
+  border-radius: 8px;
+  padding: 0.6em;
+  margin: 1em auto;
+  text-align: center;
+  color: var(--base--white);
+  background-color: var(--primary--green-accent);
+}
+
+/* -------------- Media Queries -------------- */
+
+@media screen and (min-width: 768px) {
+  .overzicht__service {
+    margin: 2em;
+  }
+
+  .overzicht__button {
+    font-size: 1.2em;
+    margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  .overzicht__container {
+    max-width: 68em;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1599px) {
+
+}
+
+@media screen and (min-width: 1799px) {
+
+}

@@ -1,0 +1,24 @@
+<!-- Hier word de header geinclude -->
+<%- include('./partials/head') %>
+
+<main>
+
+  <div class="overzicht__button--container"><a href="/service-aanmelden" class="overzicht__button">Zelf iets plaatsen...</a></div>
+  <ul class="overzicht__container">
+    <% services.forEach(function(service) { %>
+      <li class="overzicht__service">
+        <a href="/service/<%= service.slug %>">
+          <img src="https://fdnd-agency.directus.app/assets/<%= service.image %>">
+          <section class="overzicht__service--tekst">
+            <h2><%= service.title %></h2>
+            <p><%= service.short_description %></p>
+          </section>
+        </a>
+    </li>
+    <% }); %> 
+  </ul>
+
+</main>
+
+<!-- Hier word de foot geinclude -->
+<%- include('./partials/foot') %>

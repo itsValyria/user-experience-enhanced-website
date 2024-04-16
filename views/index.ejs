@@ -1,0 +1,65 @@
+<!-- Hier word de header geinclude -->
+<%- include('./partials/head') %>
+
+<main>
+
+    <section class="main__index--hero">
+        <section class="main__index--overlay">
+            <h2>Wat is West<span>Connect</span>?</h2>
+            <p>WestConnect is een initiatief om mensen in de buurt met elkaar te verbinden. Vrijwilligers gezocht, zoek jij die ene toffe muzikant voor op je buurtfeestje of organiseer je een theekransje voor ouderen? Alles is welkom!</p>
+            <a href="#">Lees meer...</a>
+        </section>
+    </section>
+
+    <section class="main__index--article vraag-aanbod">
+        <section class="main__index--article-txt">
+            <h2>Vraag en aanbod</h2>
+            <p>Benieuwd geworden naar wat WestConnect te bieden heeft? Klik op de link hieronder en ontdek het zelf!</p>
+            <a href="/overzicht">Overzicht ➜</a> 
+        </section>
+        <img src="/assets/heart.svg" alt="Illustration of a woman holding a heart">
+    </section>
+
+    <section class="main__uitgelicht">
+        <h2>Uitgelicht</h2>
+        <ul class="main__index--services">
+            <li class="main__index--service">
+                <img src="https://fdnd-agency.directus.app/assets/<%= services[1].image %>" alt="">
+                <section class="main__index--service-txt">
+                    <h3><%= services[1].title %></h3>
+                    <p><%= services[1].short_description %></p>
+                    <a>Bekijk dit initiatief ➜</a>
+                </section>
+            </li>
+            <li class="main__index--service">
+                <img src="https://fdnd-agency.directus.app/assets/<%= services[2].image %>" alt="">
+                <section class="main__index--service-txt">
+                    <h3><%= services[2].title %></h3>
+                    <p><%= services[2].short_description %></p>
+                    <a>Bekijk dit initiatief ➜</a>
+                </section>
+            </li>
+            <li class="main__index--service">
+                <img src="https://fdnd-agency.directus.app/assets/<%= services[3].image %>" alt="">
+                <section class="main__index--service-txt">
+                    <h3><%= services[3].title %></h3>
+                    <p><%= services[3].short_description %></p>
+                    <a>Bekijk dit initiatief ➜</a>
+                </section>
+            </li>
+        </ul>
+    </section>
+
+    <section class="main__index--article">
+        <section class="main__index--article-txt">
+            <h2>Wie zijn het?</h2>
+            <p>WestConnect heeft zijn bestaan te danken aan een groep buurtbewoners die samen kwamen met een wens om een platform te creeëren waar buurtinitiatieven met vraag en aanbod elkaar kruisen.</p>
+            <a href="#">Lees meer...</a>  
+        </section>
+        <img src="/assets/neighbourhood.svg" alt="Illustration of 3 houses next to each other">
+    </section>
+
+</main>
+
+<!-- Hier word de foot geinclude -->
+<%- include('./partials/foot') %>
