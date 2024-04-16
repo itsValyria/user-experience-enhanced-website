@@ -8,6 +8,12 @@
     <% services.forEach(function(service) { %>
       <li class="overzicht__service">
         <a href="/service/<%= service.slug %>">
+          <form action="/like" method="POST">
+            <label class="heart-checkbox" for="<%= service.slug %>-like">
+              <input type="checkbox" name="like" id="<%= service.slug %>-like" value="<%= service.id %>">
+              <i class="fas fa-heart"></i>
+            </label>
+          </form>
           <img src="https://fdnd-agency.directus.app/assets/<%= service.image %>">
           <section class="overzicht__service--tekst">
             <h2><%= service.title %></h2>

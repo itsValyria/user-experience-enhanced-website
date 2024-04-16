@@ -34,6 +34,7 @@
 }
 
 .overzicht__service {
+  position: relative;
   width: 18em;
   height: 30em;
   margin: 2em 0;
@@ -71,6 +72,36 @@
   text-align: center;
   color: var(--base--white);
   background-color: var(--primary--green-accent);
+}
+
+.heart-checkbox {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.heart-checkbox input {
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.heart-checkbox .fa-heart {
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.heart-checkbox input:checked + i.fa-heart {
+  color: var(--primary--green-accent);
 }
 
 /* -------------- Media Queries -------------- */
