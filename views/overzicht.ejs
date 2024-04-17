@@ -9,9 +9,10 @@
       <li class="overzicht__service">
         <a href="/service/<%= service.slug %>">
           <form action="/like" method="POST">
-            <label class="heart-checkbox" for="<%= service.slug %>-like">
-              <input type="checkbox" name="like" id="<%= service.slug %>-like" value="<%= service.id %>">
+            <label class="heart-checkbox" for="<%= service.id %>-like">
+              <input type="checkbox" name="like" id="<%= service.id %>-like" value="<%= service.id %>">
               <i class="fas fa-heart"></i>
+              <span><%= service.likes %></span>
             </label>
           </form>
           <img src="https://fdnd-agency.directus.app/assets/<%= service.image %>">
@@ -22,7 +23,7 @@
         </a>
     </li>
     <% }); %> 
-  </ul>
+  </ul> 
 
 </main>
 

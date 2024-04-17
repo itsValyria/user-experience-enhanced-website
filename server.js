@@ -43,17 +43,17 @@ const fetchData = async () => {
   });
 
   // GET-route voor het weergeven van de service datail page met slug
-  app.get("/dienst/:slug", function (request, response) {
+  app.get("/service/:slug", function (request, response) {
     const serviceSlug = request.params.slug;
     const service = allAdvertisementsData.find(
       (service) => service.slug === serviceSlug
     );
     if (!service) {
-      console.error(`Dienst met slug ${serviceSlug} niet gevonden`);
-      response.status(404).send("Dienst niet gevonden");
+      console.error(`Service met slug ${serviceSlug} niet gevonden`);
+      response.status(404).send("Service niet gevonden");
       return;
     }
-    response.render("dienst", { service: service });
+    response.render("service", { service: service });
   });
 
   // Zorg voor een leesbare URL door de titel weer te geven in plaats van het ID
@@ -116,6 +116,22 @@ const fetchData = async () => {
       console.error("Error while posting data to API:", error);
       // Handle de error response hier!
       response.status(500).send("Internal Server Error");
+    }
+  });
+
+  // POST route for liking a service
+  app.post("/like", function (request, response) {
+    const { like_id } = request.body; // Update property name
+    console.log("Received like request for service ID:", like_id); // Log the received like_id
+    const service = allAdvertisementsData.find(service => service.id === parseInt(like_id));
+    if (service) {
+      // Increase likes count for the service
+      service.likes = (service.likes || 0) + 1; // Increment likes count
+      console.log("Updated likes count for service:", service); // Log the updated service object
+      response.redirect("/"); // Redirect to the homepage
+    } else {
+      console.log("Service not found for ID:", like_id); // Log if service not found
+      response.status(404).send("Service not found");
     }
   });
 
