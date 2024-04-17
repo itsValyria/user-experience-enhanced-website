@@ -107,6 +107,9 @@ const fetchData = async () => {
       // Feedback van de API
       console.log("Response from API:", responseFromAPI);
 
+      // Fetch updated data from the API
+      allAdvertisementsData = await fetchData();
+
       // Redirect naar de succes pagina
       response.redirect("/service-aanmelden-gelukt");
     } catch (error) {
