@@ -119,19 +119,38 @@ const fetchData = async () => {
     }
   });
 
-  // POST route for liking a service
-  app.post("/like", function (request, response) {
-    const { like_id } = request.body; // Update property name
-    console.log("Received like request for service ID:", like_id); // Log the received like_id
-    const service = allAdvertisementsData.find(service => service.id === parseInt(like_id));
+  // POST-route voor het liken van een service
+  app.post("/like", async function (request, response) {
+    const { like_id } = request.body;
+    console.log("Like verzoek voor service met ID:", like_id);
+    const service = allAdvertisementsData.find(
+      (service) => service.id === parseInt(like_id)
+    );
     if (service) {
-      // Increase likes count for the service
-      service.likes = (service.likes || 0) + 1; // Increment likes count
-      console.log("Updated likes count for service:", service); // Log the updated service object
-      response.redirect("/"); // Redirect to the homepage
+      // Up het aantal likes voor de service
+      service.likes = (service.likes || 0) + 1;
+      // Update het aantal likes in de Directus API
+      try {
+        await fetchJson(baseUrl + `/items/dh_services/${like_id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ likes: service.likes }),
+        });
+      } catch (error) {
+        console.error(
+          "Fout bij het patchen van het aantal likes in de Directus API:",
+          error
+        );
+        // Hier kun je een fout behandelen voor de user.
+      }
+      //Laat het weten als het liken succesvol is.
+      console.log("Aantal likes bijgewerkt voor service:", service); // Log het bijgewerkte service object
     } else {
-      console.log("Service not found for ID:", like_id); // Log if service not found
-      response.status(404).send("Service not found");
+      // Laat het weten als de service niet gevonden is.
+      console.log("Service niet gevonden voor ID:", like_id);
+      response.status(404).send("Service niet gevonden");
     }
   });
 
