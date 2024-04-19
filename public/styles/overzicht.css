@@ -108,10 +108,15 @@
   justify-content: center;
   background-color: var(--base--white);
   border-radius: 8px;
+  transition: ease-in-out 0.2s;
 }
 
 .heart-checkbox input:checked + i.fa-heart {
   color: var(--primary--green-accent);
+}
+
+.heart-checkbox:hover i.fa-heart {
+  color: var(--base--grey-19);
 }
 
 /* -------------- Media Queries -------------- */
