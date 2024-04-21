@@ -1,15 +1,5 @@
 /* ------------- Root & Font ------------- */
 
-@font-face {
-  font-family: "Medium";
-  src: url("/fonts/Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Bold";
-  src: url("/fonts/Bold.otf") format("opentype");
-}
-
 :root {
   --base--white: #fff;
   --base--grey-97: #f8f8f8;
