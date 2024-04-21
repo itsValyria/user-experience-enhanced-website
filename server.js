@@ -42,6 +42,11 @@ fetchData().then((allAdvertisementsData) => {
     response.render("index", { services: allAdvertisementsData });
   });
 
+  // GET-route voor de FAQ pagina
+  app.get("/faq", function (request, response) {
+    response.render("faq", { services: allAdvertisementsData, });
+  });
+
   // GET-route voor de overzichtspagina
   app.get("/overzicht", function (request, response) {
     response.render("overzicht", { services: allAdvertisementsData });
@@ -73,9 +78,7 @@ fetchData().then((allAdvertisementsData) => {
 
   // GET-route voor de pagina om een service aanmelding succes weer te geven
   app.get("/service-aanmelden-gelukt", function (request, response) {
-    response.render("service-aanmelden-gelukt", {
-      services: allAdvertisementsData,
-    });
+    response.render("service-aanmelden-gelukt", { services: allAdvertisementsData });
   });
 
   // POST-route om formuliergegevens te verwerken
