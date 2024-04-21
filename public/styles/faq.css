@@ -98,6 +98,10 @@ details {
     max-width: 40em;
   }
 
+  .faq__container p {
+    max-width: 50em;
+  }
+
   .faq__container, .faq__intro {
     padding: 1em 10em;
   }
