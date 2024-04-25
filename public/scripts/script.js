@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ like_id: serviceI })
+          body: JSON.stringify({ like_id: serviceId })
         });
         if (!response.ok) {
           throw new Error('Failed to update likes count in Directus API');
