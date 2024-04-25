@@ -18,6 +18,9 @@
 /* ------------- Loading Class ------------- */
 
 .loading {
+  position: absolute;
+  top: 40%;
+  left: 38%;
   width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
