@@ -64,6 +64,10 @@
   background-color: var(--primary--green-accent);
 }
 
+.overzicht__like--form {
+  display: none;
+}
+
 .heart-checkbox {
   display: flex;
   justify-content: center;

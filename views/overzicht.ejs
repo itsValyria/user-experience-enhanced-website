@@ -11,7 +11,7 @@
     %>
     <li class="overzicht__service">
       <a href="/service/<%= service.slug %>">
-        <form action="/like" method="POST">
+        <form action="/like" method="POST" class="overzicht__like--form">
           <label class="heart-checkbox" for="<%= service.id %>-like">
             <input type="checkbox" name="like" id="<%= service.id %>-like" value="<%= service.id %>" />
             <i class="fas fa-heart"></i>

@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const likeForm = document.querySelectorAll('.overzicht__like--form');
   const likeCheckboxes = document.querySelectorAll('.heart-checkbox input[type="checkbox"]');
+
+  // Laat elk formulier zien
+  likeForm.forEach(function(likeForm) {
+    likeForm.style.display = 'block';
 
   // Voor elke checkbox, add eventListener change, en als hij gechanged is...
   likeCheckboxes.forEach(function(checkbox) {
@@ -36,4 +41,4 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Oeps! Er is iets mis gegaan bij het liken van dit initiatief. Herlaad de pagina en probeer het opnieuw.');
       }
     });
-  })});
+  })})});
