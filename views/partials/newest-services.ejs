@@ -2,7 +2,7 @@
   <h2>Nieuwste initiatieven</h2>
   <ul class="main__index--services">
       <% 
-      // Sort services array based on ID in descending order
+      // Sorter services op ID van hoog naar laag, en pak alleen de eerste 3
       services.sort((a, b) => b.id - a.id).slice(0, 3).forEach((service) => { 
       %>
       <li class="main__index--service">

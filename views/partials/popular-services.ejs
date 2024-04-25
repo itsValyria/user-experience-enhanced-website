@@ -2,7 +2,7 @@
   <h2>Populairste initiatieven</h2>
   <ul class="main__index--services">
       <% 
-      // Sort services array based on likes in descending order
+      // Sort services based op likes, aflopend, en pak alleen de eerste 3
       services.sort((a, b) => b.likes - a.likes).slice(0, 3).forEach((service) => { 
       %>
       <li class="main__index--service">

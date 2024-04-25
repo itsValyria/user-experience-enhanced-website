@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         likeCount.textContent = parseInt(likeCount.textContent) - 1;
       }
-
       // Update de Like count in de Directus API
       try {
         const response = await fetch('/like', {
@@ -21,15 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ like_id: serviceId })
+          body: JSON.stringify({ like_id: serviceI })
         });
         if (!response.ok) {
           throw new Error('Failed to update likes count in Directus API');
         }
       } catch (error) {
         console.error('Error updating likes count:', error);
-        // Hier kun je de user een error message geven.
+        // Verander naar een broken heart
+        const heartIcon = this.parentElement.querySelector('i.fas.fa-heart');
+        heartIcon.className = 'fas fa-heart-broken heart-checkbox-error';
+        // Disable de checkbox tot een refresh
+        this.disabled = true;
+        // Geef een pop-up met een foutmelding en instructie hoe nu verder
+        alert('Oeps! Er is iets mis gegaan bij het liken van dit initiatief. Herlaad de pagina en probeer het opnieuw.');
       }
     });
-  });
-});
+  })});

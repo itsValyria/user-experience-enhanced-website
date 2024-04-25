@@ -88,6 +88,12 @@
   display: none;
 }
 
+.heart-checkbox i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .heart-checkbox .fa-heart {
   font-size: 22px;
   height: 40px;
@@ -107,6 +113,16 @@
 
 .heart-checkbox:hover i.fa-heart {
   color: var(--base--grey-19);
+}
+
+.heart-checkbox-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  color: var(--base--black);
 }
 
 /* -------------- Media Queries -------------- */
