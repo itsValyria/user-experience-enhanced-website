@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkbox.addEventListener('change', async function() {
       const serviceId = this.value;
       const likeCount = this.parentElement.querySelector('span');
+      const heartIcon = this.parentElement.querySelector('i.fas.fa-heart');
 
       // Als de checkbox checked is, up de like count, anders eentje eraf halen!
       if (this.checked) {
@@ -28,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } catch (error) {
         console.error('Error updating likes count:', error);
         // Verander naar een broken heart
-        const heartIcon = this.parentElement.querySelector('i.fas.fa-heart');
         heartIcon.className = 'fas fa-heart-broken heart-checkbox-error';
         // Disable de checkbox tot een refresh
         this.disabled = true;
