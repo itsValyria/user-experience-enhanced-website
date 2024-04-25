@@ -190,6 +190,10 @@ header a {
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("/assets/background.webp");
+  background-image: image-set(
+    url("/assets/background.webp") format("webp"),
+    url("/assets/background.jpg") format("jpeg")
+  );
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   z-index: -1;
 }
@@ -296,11 +300,11 @@ header a {
 
 .main__index--service h3 {
   margin: 0.2em 0;
-  min-height: 3em;
+  height: 2.8em;
 }
 
 .main__index--service p {
-  min-height: 12em;
+  height: 12em;
 }
 
 .main__index--service a {
@@ -373,7 +377,6 @@ footer {
     background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
-
 
 /* ------------- Media Queries ------------- */
 

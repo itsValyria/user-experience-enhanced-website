@@ -20,35 +20,14 @@
         <img src="/assets/heart.svg" alt="Illustration of a woman holding a heart">
     </section>
 
-    <section class="main__uitgelicht">
-        <h2>Uitgelicht</h2>
-        <ul class="main__index--services">
-            <li class="main__index--service">
-                <img loading="lazy" src="https://fdnd-agency.directus.app/assets/<%= services[1].image %>" alt="">
-                <section class="main__index--service-txt">
-                    <h3><%= services[1].title %></h3>
-                    <p><%= services[1].short_description %></p>
-                    <a>Bekijk dit initiatief ➜</a>
-                </section>
-            </li>
-            <li class="main__index--service">
-                <img loading="lazy" src="https://fdnd-agency.directus.app/assets/<%= services[2].image %>" alt="">
-                <section class="main__index--service-txt">
-                    <h3><%= services[2].title %></h3>
-                    <p><%= services[2].short_description %></p>
-                    <a>Bekijk dit initiatief ➜</a>
-                </section>
-            </li>
-            <li class="main__index--service">
-                <img loading="lazy" src="https://fdnd-agency.directus.app/assets/<%= services[3].image %>" alt="">
-                <section class="main__index--service-txt">
-                    <h3><%= services[3].title %></h3>
-                    <p><%= services[3].short_description %></p>
-                    <a>Bekijk dit initiatief ➜</a>
-                </section>
-            </li>
-        </ul>
-    </section>
+    <!-- Hier worden de 3 handpicked initiatieven geinclude -->
+    <%- include('./partials/handpicked-services') %>
+
+    <!-- Hier worden de 3 populairste initiatieven geinclude -->
+    <%- include('./partials/popular-services') %>
+
+    <!-- Hier worden de 3 nieuwste initiatieven geinclude -->
+    <%- include('./partials/newest-services') %>
 
     <section class="main__index--article">
         <section class="main__index--article-txt">
