@@ -5,12 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
     '.heart-checkbox input[type="checkbox"]'
   );
 
+  // Laat het laad element zien als JavaScript het doet
+  loadingElements.forEach(function (loadingElement) {
+    loadingElement.style.display = "block";
+  });
+
   // Haal het laad element weg wanneer de DOM content geladen is
   loadingElements.forEach(function (loadingElement) {
     loadingElement.style.display = "none";
   });
 
-  // Laat elk formulier zien
+  // Laat elk like formulier/button zien
   likeForm.forEach(function (likeForm) {
     likeForm.style.display = "block";
 

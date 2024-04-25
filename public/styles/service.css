@@ -18,6 +18,7 @@
 /* ------------- Loading Class ------------- */
 
 .loading {
+  display: none;
   position: absolute;
   top: 40%;
   left: 38%;
