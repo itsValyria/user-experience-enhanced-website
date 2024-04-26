@@ -10,8 +10,9 @@
     services.sort((a, b) => b.id - a.id); services.forEach(function(service) {
     %>
     <li class="overzicht__service">
+      <div class="loading"></div>
       <a href="/service/<%= service.slug %>">
-        <form action="/like" method="POST">
+        <form action="/like" method="POST" class="overzicht__like--form">
           <label class="heart-checkbox" for="<%= service.id %>-like">
             <input type="checkbox" name="like" id="<%= service.id %>-like" value="<%= service.id %>" />
             <i class="fas fa-heart"></i>
