@@ -106,7 +106,7 @@ header a {
 
 .menu__btn {
   display: flex;
-  position: absolute;
+  position: fixed;
   align-items: center;
   top: 20px;
   left: 20px;
