@@ -4,9 +4,9 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 WestConnect is een platform waar vraag en aanbod in Amsterdam West samen komt.
 
-Bekijk de website zelf [hier](https://user-experience-enhanced-website-iwna.onrender.com/)!
+Bekijk de website zelf [hier](https://user-experience-enhanced-website-iwna.onrender.com/)
 
-![Recording2024-03-21at10 53 131-ezgif com-resize](https://github.com/itsValyria/the-web-is-for-everyone-interactive-functionality/assets/76444716/6b616806-3eef-41c8-be8a-45571208b18e)
+![De Buurtcampus](https://github.com/itsValyria/user-experience-enhanced-website/assets/76444716/0d2967b8-f8cf-4a21-950a-3fbb24ac991a)
 
 ## Inhoudsopgave
 
