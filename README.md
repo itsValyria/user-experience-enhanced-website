@@ -18,12 +18,12 @@ WestConnect is een platform waar vraag en aanbod in Amsterdam West samen komt.
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
-De Buurtcampus is een project voor een letterlijke buurt campus waar vraag en aanbod elkaar kruist. Het is een initiatief om mensen in de buurt met elkaar te verbinden. Vrijwilligers gezocht, zoek jij die ene toffe muzikant voor op je buurtfeestje of organiseer je een theekransje voor ouderen? Alles is welkom!
+WestConnect is een project voor een letterlijke buurt campus waar vraag en aanbod elkaar kruist. Het is een initiatief om mensen in de buurt met elkaar te verbinden. Vrijwilligers gezocht, zoek jij die ene toffe muzikant voor op je buurtfeestje of organiseer je een theekransje voor ouderen? Alles is welkom!
 
 ## Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
-De Buurtcampus heeft deze sprint vijf pagina's:
+WestConnect heeft deze sprint vijf pagina's:
 
 ### 1. Initiatieven overzicht page
 Deze pagina is gebaseerd op de volgende user story: <br>
